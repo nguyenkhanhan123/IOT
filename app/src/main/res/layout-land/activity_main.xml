@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg2"
+  >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            >
+            <LinearLayout
+                android:id="@+id/light"
+                android:layout_width="121dp"
+                android:layout_height="121dp"
+                android:layout_marginHorizontal="11dp"
+                android:background="@drawable/bg_edt"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/light"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/lighttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Sáng"
+                    android:textColor="#00247E"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/soil"
+                android:layout_width="121dp"
+                android:layout_height="121dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/bg_edt"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/soilhealth"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/soiltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="85%"
+                    android:textColor="#00247E"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            >
+            <LinearLayout
+                android:id="@+id/temperature"
+                android:layout_width="121dp"
+                android:layout_height="121dp"
+                android:layout_marginHorizontal="11dp"
+                android:background="@drawable/bg_edt"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/hightemperature"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/temperaturetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="32°C"
+                    android:textColor="#00247E"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/air"
+                android:layout_width="121dp"
+                android:layout_height="121dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/bg_edt"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/airhumidity"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/airtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="75%"
+                    android:textColor="#00247E"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </TableRow>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <TableRow
+                android:layout_width="121dp"
+                android:layout_height="61dp"
+                android:background="@drawable/bg_edt"
+                android:gravity="center"
+                android:layout_marginHorizontal="11dp"
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/recovery" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchauto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:thumbTint="@color/switch_thumb_color"
+                    app:trackTint="@color/switch_track_color" />
+            </TableRow>
+            <TableRow
+                android:layout_width="121dp"
+                android:layout_height="61dp"
+                android:background="@drawable/bg_edt"
+                android:layout_marginEnd="11dp"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/lamp" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchlamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:thumbTint="@color/switch_thumb_color"
+                    app:trackTint="@color/switch_track_color" />
+            </TableRow>
+        </TableRow>
+        <TableRow
+            android:layout_width="121dp"
+            android:layout_height="61dp"
+            android:background="@drawable/bg_edt"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/pump" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchpump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:thumbTint="@color/switch_thumb_color"
+                app:trackTint="@color/switch_track_color" />
+        </TableRow>
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

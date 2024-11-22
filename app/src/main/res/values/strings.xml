@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestConnectESP8266</string>
+    <string name="channel_description">This is my channel</string>
+</resources>

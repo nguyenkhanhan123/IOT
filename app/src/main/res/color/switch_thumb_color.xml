@@ -1,0 +1,6 @@
+
+<!-- res/color/switch_thumb_color.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/colorThumbChecked" android:state_checked="true"/> <!-- Màu cho cục trượt khi bật -->
+    <item android:color="@color/colorThumbUnchecked" android:state_checked="false"/> <!-- Màu cho cục trượt khi tắt -->
+</selector>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7AC9FE"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="9dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:text="Welcome to Smart Garden"
+        android:textColor="#FFFFFF"
+        android:textSize="27sp"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:id="@+id/wifi"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:padding="11dp"
+        android:src="@drawable/wifi"
+        />
+</TableRow>
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="11dp"
+        android:layout_marginVertical="11dp"
+        android:background="@drawable/bg_edt"
+        android:paddingHorizontal="11dp">
+        <EditText
+            android:id="@+id/textfind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@drawable/bg_edt2"
+            android:hint="Thêm vườn của bạn"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText"
+            />
+        <ImageView
+            android:id="@+id/find"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="11dp"
+            android:src="@drawable/ic_search"
+            app:tint="@color/black" />
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_song"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ln_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        >
+        <TableRow
+            android:id="@+id/garden"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginHorizontal="11dp"
+            android:layout_marginVertical="11dp"
+            android:background="@drawable/bg_edt"
+            android:visibility="visible"
+            android:clickable="false"
+            android:paddingHorizontal="11dp">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="22sp"
+               />
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:padding="9dp"
+                android:src="@drawable/wifi" />
+            <ImageView
+                android:id="@+id/exit"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:padding="9dp"
+                android:src="@drawable/exit" />
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

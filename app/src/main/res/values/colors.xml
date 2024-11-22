@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorThumbChecked">#FF0000</color> <!-- Màu cho cục trượt khi bật -->
+    <color name="colorThumbUnchecked">#CCCCCC</color> <!-- Màu cho cục trượt khi tắt -->
+    <color name="colorTrackChecked">#00FF00</color> <!-- Màu cho đường ray khi bật -->
+    <color name="colorTrackUnchecked">#AAAAAA</color> <!-- Màu cho đường ray khi tắt -->
+
+</resources>

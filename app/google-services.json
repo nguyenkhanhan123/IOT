@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274195897162",
+    "project_id": "testiot-e8b8d",
+    "storage_bucket": "testiot-e8b8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274195897162:android:206b93d4a58968c1353fb3",
+        "android_client_info": {
+          "package_name": "com.gh.mp3player.testconnectesp8266"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPBZgFaPnbLtY2GdbSfhuO2hcv73HGAZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

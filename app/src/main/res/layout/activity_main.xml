@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7AC9FE"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="9dp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="20"
+            android:text="Welcome to Smart Garden"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            tools:ignore="HardcodedText" />
+        <ImageView
+            android:id="@+id/wifi"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="11dp"
+            android:src="@drawable/wifi"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="17dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/light"
+            android:layout_width="151dp"
+            android:layout_height="198dp"
+            android:background="@drawable/bg_edt"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_margin="11dp"
+                android:padding="5dp"
+                android:src="@drawable/light"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Ánh sáng"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/lighttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="9dp"
+                android:fontFamily="sans-serif-black"
+                android:text="..."
+                android:textColor="#00247E"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/soil"
+            android:layout_width="151dp"
+            android:layout_height="198dp"
+            android:background="@drawable/bg_edt"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_margin="11dp"
+                android:padding="5dp"
+                android:src="@drawable/soilhealth"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Độ ẩm đất"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/soiltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="9dp"
+                android:fontFamily="sans-serif-black"
+                android:text="..."
+                android:textColor="#00247E"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="17dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/temperature"
+            android:layout_width="151dp"
+            android:layout_height="198dp"
+            android:background="@drawable/bg_edt"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_margin="11dp"
+                android:padding="5dp"
+                android:src="@drawable/hightemperature"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Nhiệt độ"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/temperaturetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="9dp"
+                android:fontFamily="sans-serif-black"
+                android:text="..."
+                android:textColor="#00247E"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/air"
+            android:layout_width="151dp"
+            android:layout_height="198dp"
+            android:background="@drawable/bg_edt"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_margin="11dp"
+                android:padding="5dp"
+                android:src="@drawable/airhumidity"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Độ ẩm không khí"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/airtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="9dp"
+                android:fontFamily="sans-serif-black"
+                android:text="..."
+                android:textColor="#00247E"
+                android:textSize="24sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="198dp"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/auto"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="11dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/bg_edt"
+        android:paddingHorizontal="11dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/recovery" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Chế độ tự động"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchauto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:thumbTint="@color/switch_thumb_color"
+            app:trackTint="@color/switch_track_color" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/lamp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="11dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/bg_edt"
+        android:paddingHorizontal="11dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/lamp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Đèn chiếu sáng"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchlamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:thumbTint="@color/switch_thumb_color"
+            app:trackTint="@color/switch_track_color" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/pump"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="11dp"
+        android:background="@drawable/bg_edt"
+        android:paddingHorizontal="11dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/pump" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Máy bơm nước"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchpump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:thumbTint="@color/switch_thumb_color"
+            app:trackTint="@color/switch_track_color" />
+    </TableRow>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</LinearLayout>
