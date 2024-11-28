@@ -119,7 +119,6 @@ void reconnect() {
   }
 }
 
-
 void setup_esp() {
   pinMode(ledPin, OUTPUT);
   pinMode(pumpPin, OUTPUT);
@@ -143,6 +142,17 @@ unsigned long previousOnlineMillis = 0; // Biến lưu thời gian trước đó
 const long onlineInterval = 10000;      // Gửi "online" mỗi 10 giây
 
 void loop() {
+  
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("Mất kết nối WiFi, đang cố gắng kết nối lại...");
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.print(".");
+      WiFi.begin(ssid, password)
+    }
+    Serial.println("\nĐã kết nối lại WiFi!");
+  }
+
   if (!client.connected()) {
     reconnect();
   }
